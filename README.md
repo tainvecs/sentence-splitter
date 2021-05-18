@@ -1,4 +1,6 @@
 # sentence-splitter
+[![Clojars Project](https://img.shields.io/clojars/v/org.clojars.chlin/sentence-splitter.svg)](https://clojars.org/org.clojars.chlin/sentence-splitter)
+A simple sentence splitter based on Regex. 
 
 ## Usage
 
