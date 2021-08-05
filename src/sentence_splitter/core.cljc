@@ -8,7 +8,7 @@
   []
   (let [
         ;; prefix item-num upper-case-words suffix
-        pattern-headline    #"((?:^|[\n])[ ]*(?:[a-z0-9][.][ ]*)?(?:[A-Z]+)(?:[ ][A-Z]+)*[ ]*[\n])"
+        pattern-headline    #"((?:^|[\n])[ ]*(?:[a-z0-9][.][ ]*)?(?:[A-Z]+)(?:[ -](?:[A-Z]|[&-])+)*[ ]*[\n])"
         func-init           (fn [in-str]
                               (-> (str " " in-str " ")
                                   (cstr/replace pattern-headline "$1<stop>")
